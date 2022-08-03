@@ -1,0 +1,21 @@
+[package]
+name = "readsb_router"
+version = "1.0.0"
+edition = "2021"
+authors = ["Fred Clausen"]
+description = "ACARS Router: A Utility to ingest ACARS/VDLM2 from many sources, process, and feed out to many consumers."
+documentation = "https://github.com/sdr-enthusiasts/readsb_router"
+homepage = "https://github.com/sdr-enthusiasts/readsb_router"
+repository = "https://github.com/sdr-enthusiasts/readsb_router"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+clap = { version = "3.2.16", features = ["derive", "env"] }
+stubborn-io = "0.3.1"
+tokio = { version = "1.20.1", features = ["full", "tracing"] }
+tokio-util = { version = "0.7.3", features = ["full"] }
+tokio-stream = "0.1.9"
+env_logger = "0.9.0"
+log = "0.4.17"
+chrono = "0.4.19"
